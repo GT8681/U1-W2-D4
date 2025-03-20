@@ -69,11 +69,16 @@ console.log();
 const n = 0;
 function boundary(n){
     if((n >= 20 && n <= 100) || (n===400)) {
-
+          
+        return true;
         console.log(true);
+    }else {
+
+        return false;
     }
 }
-const num = boundary(21);
+const num = boundary(19);
+
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
@@ -83,12 +88,29 @@ const num = boundary(21);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function epify(string){
+    let result = "epicode" + string;
+    if(string.startsWith("EPICODE",0)=== true){
+
+result = string;
+    }
+
+}
+console.log(epify("EPICODE"));
+
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+    
+function check3and7(intPos){
+
+
+}
+
+
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
