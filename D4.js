@@ -1,8 +1,8 @@
 /* ESERCIZIO 1
  Scrivi una funzione di nome "area", che riceve due parametri (l1, l2) e calcola l'area del rettangolo associato.
 */
-
-function area(l1 , l2){
+/* SCRIVI QUI LA TUA RISPOSTA */
+      function area(l1 , l2){
        const rsult = l1*l2;
         return rsult;
 
@@ -11,7 +11,7 @@ function area(l1 , l2){
   const finale = area(4,5);
 console.log(finale);
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+
 
 /* ESERCIZIO 2
  Scrivi una funzione di nome "crazySum", che riceve due numeri interi come parametri.
@@ -20,6 +20,22 @@ console.log(finale);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function crazySum(n1,n2){
+    const somma = n1+n2;
+   
+    if(n1===n2){
+        const moltiplata =somma*3;
+        console.log(moltiplata);
+         }
+ return somma;
+    }
+
+
+
+
+const risult = crazySum(7,7);
+console.log(risult);
 
 /* ESERCIZIO 3
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
