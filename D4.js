@@ -27,10 +27,10 @@ function crazySum(n1,n2){
     if(n1===n2){
         const moltiplata =somma*3;
         console.log(moltiplata);
-         }
+         } else{
  return somma;
     }
-
+}
 
 
 
@@ -68,16 +68,12 @@ console.log();
 /* SCRIVI QUI LA TUA RISPOSTA */
 const n = 0;
 function boundary(n){
-    if((n >= 20 && n <= 100) || (n===400)) {
-          
-        return true;
-        console.log(true);
-    }else {
 
-        return false;
-    }
+    return (n >= 20 && n <= 100) || n===400
+          
+       
 }
-const num = boundary(19);
+console.log(boundary(19));
 
 
 /* ESERCIZIO 5
@@ -89,13 +85,18 @@ const num = boundary(19);
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function epify(string){
-    let result = "epicode" + string;
-    if(string.startsWith("EPICODE",0)=== true){
+    const words= string.split(" ");
+    console.log(words);
+   if(words[].toLowerCasa() === "epicode"){
+    return string;
 
-result = string;
+   }else {
+    return "EPICODE" + stringa;
+   }
+ 
     }
 
-}
+
 console.log(epify("EPICODE"));
 
 /* ESERCIZIO 6
@@ -107,8 +108,11 @@ console.log(epify("EPICODE"));
     
 function check3and7(intPos){
 
+    return  intpos % 3 === 0 || intPos % 7 === 0;
+       
 
-}
+    }
+console.log(check3and7(21));
 
 
 
@@ -117,6 +121,10 @@ function check3and7(intPos){
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+
+
+
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
